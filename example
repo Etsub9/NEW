@@ -1,0 +1,38 @@
+public class _input_ {
+
+	public static void main(String[] args) {
+	
+		String name;
+		int hours;
+		double payRate;
+		double grossPay;
+		
+		// create a scanner object to read input
+		
+		java.util.Scanner keyboard = new java.util.Scanner(System.in);
+		
+        // get the users name 
+		
+		System.out.println(" what is your name?");
+		name = keyboard.nextLine();
+
+		//get users hourly pay rate 
+		 System.out.println(" how many hours did u get to work lat week?");
+		 hours = keyboard.nextInt();
+		 
+		 //get the users hourly pay rate 
+		 
+		 System.out.println(" what is ur hourly pay rate");
+		 payRate = keyboard.nextDouble();
+		 
+		 //calculate gross pay 
+		 grossPay = hours * payRate;
+		 
+		 
+		 System.out.println("hello "+ name);
+		 System.out.println(" ur gross pay is $ "+ grossPay);
+
+	
+	} 
+
+}
